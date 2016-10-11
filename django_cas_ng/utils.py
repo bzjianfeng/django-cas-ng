@@ -60,7 +60,9 @@ def get_cas_client(service_url=None):
         extra_login_params=django_settings.CAS_EXTRA_LOGIN_PARAMS,
         renew=django_settings.CAS_RENEW,
         username_attribute=django_settings.CAS_USERNAME_ATTRIBUTE,
-        proxy_callback=django_settings.CAS_PROXY_CALLBACK
+        proxy_callback=django_settings.CAS_PROXY_CALLBACK,
+        login_url=django_settings.CAS_LOGIN_URL,
+        logout_url=django_settings.CAS_LOGOUT_URL
     )
 
 
